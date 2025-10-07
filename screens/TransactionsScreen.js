@@ -23,6 +23,7 @@ export default function TransactionsScreen() {
     try {
       const token = await AsyncStorage.getItem("token");
       if (!token) throw new Error("Token tidak ditemukan. Silakan login.");
+      // DISINI SAYA WAJIBKAN PAKE IP DARI MOBILE UNTUK AKSESNYA BACKEND NYA HARUS PAKE IP PC ATAU WIFI YANG SAMA DALAM HP DAN PC JARINGAN NYA HARUS SAMA
 
       const res = await fetch("http://10.171.234.77:8080/api/v1/transactions", {
         headers: { Authorization: `Bearer ${token}` },
