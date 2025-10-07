@@ -93,7 +93,7 @@ export default function TransactionsScreen() {
         <Text style={{ color: "red", textAlign: "center", marginTop: 20 }}>{error}</Text>
       ) : (
         <>
-          {/* Header dengan Last Transaction & See All */}
+         
           <View style={styles.header}>
             <Text style={styles.headerText}>Last Transaction</Text>
             {allTransactions.length > 5 && (
