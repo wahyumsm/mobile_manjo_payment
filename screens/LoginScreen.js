@@ -24,6 +24,7 @@ export default function LoginScreen({ onLoginSuccess }) {
     setLoading(true);
 
     try {
+      // DISINI SAYA WAJIBKAN PAKE IP DARI MOBILE UNTUK AKSESNYA BACKEND NYA HARUS PAKE IP PC ATAU WIFI YANG SAMA DALAM HP DAN PC JARINGAN NYA HARUS SAMA
       const res = await fetch("http://10.171.234.77:8080/api/v1/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
